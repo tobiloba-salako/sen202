@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusSafe | Report Incident</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<span>CampusSafe</span>
+
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="report.html" class="nav-btn">Report</a></li>
+
+<li><a href="reports.html">Dashboard</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="report-hero">
+
+<h1>Report a Security Incident</h1>
+
+<p>
+
+Help make the campus safer by providing accurate information
+about any security incident you witnessed or experienced.
+
+</p>
+
+</section>
+
+<section class="report-container">
+
+<div class="report-card">
+
+<form id="reportForm">
+
+<div class="form-grid">
+
+<div class="input-group">
+
+<label>
+
+<input type="checkbox" id="anonymous">
+
+Report Anonymously
+
+</label>
+
+</div>
+
+<div class="input-group">
+
+<label>Full Name</label>
+
+<input
+type="text"
+id="fullname"
+placeholder="Enter your full name">
+
+</div>
+
+<div class="input-group">
+
+<label>Email Address</label>
+
+<input
+type="email"
+id="email"
+placeholder="example@email.com"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Phone Number</label>
+
+<input
+type="tel"
+id="phone"
+placeholder="080xxxxxxxx">
+
+</div>
+
+<div class="input-group">
+
+<label>Incident Category</label>
+
+<select id="category" required>
+
+<option value="">Select Category</option>
+
+<option>Theft</option>
+
+<option>Assault</option>
+
+<option>Robbery</option>
+
+<option>Cultism</option>
+
+<option>Harassment</option>
+
+<option>Fire Outbreak</option>
+
+<option>Medical Emergency</option>
+
+<option>Vandalism</option>
+
+<option>Other</option>
+
+</select>
+
+</div>
+
+<div class="input-group">
+
+<label>Date</label>
+
+<input type="date" id="date" required>
+
+</div>
+
+<div class="input-group">
+
+<label>Time</label>
+
+<input type="time" id="time" required>
+
+</div>
+
+<div class="input-group">
+
+<label>Location</label>
+
+<input
+type="text"
+id="location"
+placeholder="Incident location"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Severity</label>
+
+<select id="severity">
+
+<option>Low</option>
+
+<option>Medium</option>
+
+<option>High</option>
+
+<option>Critical</option>
+
+</select>
+
+</div>
+
+<div class="input-group full">
+
+<label>Description</label>
+
+<textarea
+
+id="description"
+
+rows="6"
+
+placeholder="Describe the incident in detail..."
+
+required></textarea>
+
+</div>
+
+<div class="input-group">
+
+<label>Upload Image</label>
+
+<input type="file" accept="image/*">
+
+</div>
+
+<div class="input-group">
+
+<label>Upload Video</label>
+
+<input type="file" accept="video/*">
+
+</div>
+
+</div>
+
+<div class="submit-area">
+
+<button class="btn-primary" type="submit">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+Submit Report
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</section>
+
+<script src="js/report.js"></script>
+
+</body>
+</html>

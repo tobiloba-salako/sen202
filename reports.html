@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIM Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<span>CampusSafe</span>
+
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="report.html">Report</a></li>
+
+<li><a href="reports.html" class="nav-btn">Dashboard</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="dashboard">
+
+<h1>Security Incident Dashboard</h1>
+
+<div class="summary">
+
+<div class="summary-card">
+<h2 id="totalReports">0</h2>
+<p>Total Reports</p>
+</div>
+
+<div class="summary-card">
+<h2 id="pendingReports">0</h2>
+<p>Pending</p>
+</div>
+
+<div class="summary-card">
+<h2 id="resolvedReports">0</h2>
+<p>Resolved</p>
+</div>
+
+<div class="summary-card">
+<h2 id="theftReports">0</h2>
+<p>Theft Cases</p>
+</div>
+
+</div>
+
+<div class="toolbar">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search by location or category">
+
+<select id="filterCategory">
+
+<option value="All">All Categories</option>
+
+<option value="Theft">Theft</option>
+
+<option value="Assault">Assault</option>
+
+<option value="Robbery">Robbery</option>
+
+<option value="Cultism">Cultism</option>
+
+<option value="Harassment">Harassment</option>
+
+<option value="Medical Emergency">Medical Emergency</option>
+
+<option value="Fire Outbreak">Fire Outbreak</option>
+
+<option value="Other">Other</option>
+
+</select>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Category</th>
+
+<th>Location</th>
+
+<th>Date</th>
+
+<th>Severity</th>
+
+<th>Status</th>
+
+<th>Actions</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tableBody">
+
+</tbody>
+
+</table>
+
+</section>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
